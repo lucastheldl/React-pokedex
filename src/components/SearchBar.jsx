@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { searchPokemon } from "../api";
+//css
+import "./SearchBar.css";
 
 const SearchBar = ({ onSearchHandler }) => {
   const [search, setSearch] = useState("pika");

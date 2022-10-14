@@ -3,6 +3,8 @@ import React from "react";
 //components
 import Pagination from "./Pagination";
 import Pokemon from "./Pokemon";
+//css
+import "./Pokedex.css";
 
 const Pokedex = ({ pokemons, loading, page, totalPages, setPages }) => {
   const onLeftClick = () => {
@@ -30,7 +32,7 @@ const Pokedex = ({ pokemons, loading, page, totalPages, setPages }) => {
       </div>
 
       {loading ? (
-        <p>Carregando, segura as pontas...</p>
+        <p className="loading-text">Carregando, segura as pontas...</p>
       ) : (
         <div className="pokedex-grid">
           {pokemons &&

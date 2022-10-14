@@ -1,0 +1,16 @@
+.pagination-container{
+  display: flex;
+  color: white;
+  margin: 0px 1em;
+}
+.pagination-container button{
+ border: none;
+ border-radius: 5px;
+ margin: 0px 1em;
+ cursor: pointer;
+ transition: all 0.2s;
+}
+.pagination-container button:hover{
+ color: white;
+ background-color: rgba(38, 38, 38,0.25);
+}
