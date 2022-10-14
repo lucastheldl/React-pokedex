@@ -92,9 +92,7 @@ nav{
   align-items: center;
   justify-content: space-between;
 }
-.card-bottom button p{
- color:crimson;
-}
+
 .pokemon-type{
   display: flex;
 }

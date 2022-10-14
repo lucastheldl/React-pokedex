@@ -1,6 +1,6 @@
-import { useContext } from "react";
+import { createContext } from "react";
 
-const FavoriteContext = React.createContext({
+const FavoriteContext = createContext({
   favPokemon: [],
   updateFavPokemon: (id) => null,
 });
