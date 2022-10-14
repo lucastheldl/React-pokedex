@@ -60,9 +60,11 @@
 }
 #fighting{
   background-color: rgb(210, 25, 25);
+  color: white;
 }
 #dragon{
   background-color: rgb(238, 58, 58);
+  color: white;
 }
 #fire{
   background-color: rgb(255, 111, 0);
@@ -75,6 +77,7 @@
 }
 #poison{
   background-color: rgb(103, 28, 137);
+  color: white;
 }
 #ghost{
   background-color: rgb(80, 8, 8);
@@ -111,6 +114,7 @@
 }
 #rock{
   background-color: rgb(104, 55, 24);
+  color: white;
 }
 #fairy{
   background-color: rgb(211, 87, 233);
