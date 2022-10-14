@@ -9,13 +9,18 @@ import SearchBar from "./components/SearchBar";
 import Pokedex from "./components/Pokedex";
 
 function App() {
+  const itensPerPage = 25;
+
+  const [page, setPage] = useState(0);
+  const [totalPages, settotalPages] = useState(0);
   const [pokemons, setPokemons] = useState([]);
+  const [favorites, setFavorites] = useState([]);
   const [loading, seLoading] = useState(false);
 
   const fetchPokemons = async () => {
     try {
       seLoading(true);
-      const data = await getPokemons();
+      const data = await getPokemons(itensPerPage, itensPerPage * page);
       const promises = data.results.map(async (pokemon) => {
         return getPokemonData(pokemon.url);
       });
@@ -24,22 +29,29 @@ function App() {
 
       setPokemons(result);
 
+      settotalPages(Math.ceil(data.count / itensPerPage));
       seLoading(false);
     } catch (error) {
       console.log("fetchPokemons:", error.message);
       seLoading(false);
     }
   };
+
   useEffect(() => {
     fetchPokemons();
-  }, []);
+  }, [page]);
 
   return (
-    <div>
+    <div className="App">
       <NavBar />
       <SearchBar />
-      <Pokedex pokemons={pokemons} loading={loading} />
-      <div className="App"></div>
+      <Pokedex
+        pokemons={pokemons}
+        loading={loading}
+        page={page}
+        totalPages={totalPages}
+        setPages={setPage}
+      />
     </div>
   );
 }

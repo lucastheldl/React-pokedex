@@ -1,5 +1,6 @@
 *{
   margin: 0;
+  
 }
 
 nav{
@@ -13,7 +14,9 @@ nav{
   width: 160px;
 }
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  
 }
 .searchBar_container{
  display: flex;
@@ -22,7 +25,6 @@ nav{
  align-items: center;
 }
 .searchBar{
-  background-color: white;
   margin-right: 20px;
 }
 .searchBar input{
@@ -52,6 +54,60 @@ nav{
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(3,1fr);
+}
+
+.pokemon-card{
+  display: flex;
+  box-shadow: 4px 4px 4px RGB(0,0,0, 0.25);
+  border-radius: 3px;
+  background-color: aquamarine;
+}
+.pokemon-image{
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px 10px 0px;
+  flex: 1;
+ 
+}
+.card-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.card-top h3{
+ text-transform: capitalize;
+}
+.card-bottom{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-bottom button p{
+ color:crimson;
+}
+.pokemon-type{
+  display: flex;
+}
+.pokemon-type-text{
+  margin-right: 10px;
+}
+.pokemon-image-container{
+  padding: 8px 5px;
+  text-transform: capitalize;
+}
+.pagination-container{
+  display: flex;
+  align-items: center;
 }
 
 

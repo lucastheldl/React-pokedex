@@ -4,6 +4,7 @@ const Pokemon = ({ pokemon }) => {
   const onHearthClick = () => {
     console.log("pokemon favritado");
   };
+  const hearth = "❤";
   return (
     <div className="pokemon-card">
       <div className="pokemon-image-container">
@@ -31,7 +32,7 @@ const Pokemon = ({ pokemon }) => {
             })}
           </div>
           <button className="pokemon-heart-btn" onClick={onHearthClick}>
-            coração
+            <p>{hearth}</p>
           </button>
         </div>
       </div>

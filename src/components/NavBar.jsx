@@ -8,6 +8,7 @@ const NavBar = () => {
       <div>
         <img src={logoPng} alt="logo" className="navbar_img" />
       </div>
+      <div>❤</div>
     </nav>
   );
 };
