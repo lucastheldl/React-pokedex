@@ -1,0 +1,117 @@
+.pokemon-card{
+  display: flex;
+  box-shadow: 4px 4px 4px RGB(0,0,0, 0.25);
+  border-radius: 3px;
+  background-color: aquamarine;
+}
+.pokemon-image{
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px 10px 0px;
+  flex: 1;
+ 
+}
+.card-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.card-top h3{
+ text-transform: capitalize;
+}
+.card-bottom{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-bottom button{
+  border: none;
+  border-radius: 5px;
+  padding: 3px;
+  background-color: transparent;
+  box-shadow: 2px 2px 2px rgb(0,0,0, 0.25);
+  transition: all 0.2s;
+  transform: scale(1);
+  cursor: pointer;
+}
+.card-bottom button:hover{
+  transform: scale(1.3);
+}
+
+.pokemon-type{
+  display: flex;
+}
+.pokemon-type-text{
+  margin-right: 10px;
+}
+.pokemon-image-container{
+  padding: 8px 5px;
+  text-transform: capitalize;
+}
+#fighting{
+  background-color: rgb(210, 25, 25);
+}
+#dragon{
+  background-color: rgb(238, 58, 58);
+}
+#fire{
+  background-color: rgb(255, 111, 0);
+}
+#water{
+  background-color:aquamarine;
+}
+#ice{
+  background-color:rgb(255, 255, 255);
+}
+#poison{
+  background-color: rgb(103, 28, 137);
+}
+#ghost{
+  background-color: rgb(80, 8, 8);
+  color: white;
+}
+#flying{
+  background-color: rgb(200, 200, 200);
+}
+#steel{
+  background-color: rgb(144, 144, 144);
+}
+#dark{
+  background-color: rgb(25, 25, 25);
+  color: white;
+}
+
+#electric{
+  background-color: rgb(251, 255, 31);
+}
+#psychic{
+  background-color: rgb(155, 140, 243);
+}
+#bug{
+  background-color: rgb(100, 223, 28);
+}
+#grass{
+  background-color: rgb(57, 155, 0);
+}
+#normal{
+  background-color: rgb(255, 192, 104);
+}
+#ground{
+  background-color: rgb(167, 106, 21);
+}
+#rock{
+  background-color: rgb(104, 55, 24);
+}
+#fairy{
+  background-color: rgb(211, 87, 233);
+}

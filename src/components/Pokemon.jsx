@@ -1,6 +1,9 @@
 import React, { useContext } from "react";
 import FavoriteContext from "../context/favoriteContext";
 
+//css
+import "./Pokemon.css";
+
 const Pokemon = ({ pokemon }) => {
   const { favPokemon, updateFavPokemon } = useContext(FavoriteContext);
 
@@ -10,7 +13,7 @@ const Pokemon = ({ pokemon }) => {
   const hearth = favPokemon.includes(pokemon.name) ? "💗" : "🖤";
 
   return (
-    <div className="pokemon-card">
+    <div className="pokemon-card" id={pokemon.types[0].type.name}>
       <div className="pokemon-image-container">
         <img
           src={pokemon.sprites.front_default}

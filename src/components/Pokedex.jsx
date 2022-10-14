@@ -18,7 +18,6 @@ const Pokedex = ({ pokemons, loading, page, totalPages, setPages }) => {
   return (
     <div>
       <div className="pokedex-header">
-        <h1>Pokedex</h1>
         <div>
           <Pagination
             page={page + 1}
